@@ -1,7 +1,4 @@
-﻿using ActionPlays.Factories;
-using ActionPlays.Model;
-
-LocalConferenceFactory factory = new LocalConferenceFactory();
+﻿LocalConferenceFactory factory = new LocalConferenceFactory();
 
 Console.WriteLine("Hello, World of Conferences!");
 Conference c = factory.CreateConference(

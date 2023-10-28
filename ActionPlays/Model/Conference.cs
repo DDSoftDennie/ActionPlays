@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace ActionPlays.Model
+﻿namespace ActionPlays.Model
 {
 	public class Conference
 	{
@@ -15,6 +9,11 @@ namespace ActionPlays.Model
 		public string Name { get; set; }
 
 		public Conference(DateOnly from, DateOnly to, string name) { 
+			if(from > to)
+			{
+                throw new ArgumentException("From date must be before To date");
+            }
+			
 			From = from;
 			To = to;
 			Name = name;
