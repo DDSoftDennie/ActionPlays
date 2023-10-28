@@ -1,17 +1,10 @@
-name: .NET Console
-
-on:
-  push:
-    branches: [ "main" ]
- # pull_request:
- #   branches: [ "main" ]
-
+name: .NET Console WIN
+on: push
 jobs:
   build:
-    strategy:
-      matrix:
-        configuration: [Debug, Release]
-
+  #  strategy:
+  #   matrix:
+  #     configuration: [Debug, Release]
     runs-on: windows-latest  
 
     env:
