@@ -19,6 +19,10 @@ namespace ActionPlays.Model
 			To = to;
 			Name = name;
 		}
+		public override string ToString()
+		{
+            return $"Conference: {Name}, from {From} to {To}";
+        }
 
 	
 	}
