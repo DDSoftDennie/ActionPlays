@@ -2,11 +2,7 @@ name: .NET Console WIN
 on: push
 jobs:
   build:
-  #  strategy:
-  #   matrix:
-  #     configuration: [Debug, Release]
     runs-on: windows-latest  
-
     env:
       Solution_Name: ActionPlays                         # Replace with your solution name, i.e. MyWpfApp.sln.
      # Test_Project_Path: your-test-project-path                 # Replace with the path to your test project, i.e. MyWpfApp.Tests\MyWpfApp.Tests.csproj.
@@ -14,8 +10,8 @@ jobs:
     steps:
     - name: Checkout
       uses: actions/checkout@v3
-      with:
-        fetch-depth: 0
+   #   with:
+   #     fetch-depth: 0
 
     - name: Install .NET
       uses: actions/setup-dotnet@v3
